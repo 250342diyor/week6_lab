@@ -1,0 +1,16 @@
+#include <iostream>
+#include <windows.h>  // for Sleep()
+using namespace std;
+
+int main() {
+    int sec;
+    cout << "Enter seconds: ";
+    cin >> sec;
+    while (sec > 0) {
+        cout << sec << " seconds remaining" << endl;
+        Sleep(1000); // 1000 ms = 1 second
+        sec--;
+    }
+    cout << "Stopped";
+    return 0;
+}

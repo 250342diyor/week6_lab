@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string bin;
+    cout << "Enter a binary number: ";
+    cin >> bin;
+    int dec = 0;
+    for (int i = 0; i < bin.size(); i++) {
+        dec = dec * 2 + (bin[i] - '0');
+    }
+    cout << "The decimal number is " << dec;
+    return 0;
+}

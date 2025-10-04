@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    int sum = 0;
+    int a = 0;
+    cout << "Enter a series: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        a = i*i;
+        cout << i << "*" << i << "=" << i * i << endl;
+        sum=sum+a;
+    }
+    cout <<"Sum of numbers: " <<sum << endl;
+    return 0;
+}

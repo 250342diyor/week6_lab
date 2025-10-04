@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter how many subjects: "<<endl;
+    cin >> n;
+    double totalCredits = 0, totalPoints = 0;
+    for (int i = 0; i < n; i++) {
+        int credits;
+        double grade;
+        cout << "How many credits and grade: ";
+        cin >> credits >> grade;
+        totalCredits += credits;
+        totalPoints += credits * grade;
+    }
+    cout << "Your total GPA is " << (totalPoints / totalCredits);
+    return 0;
+}

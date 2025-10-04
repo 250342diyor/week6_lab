@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num, pos = 0, neg = 0, total = 0, count = 0;
+    cout << "Enter integers (0 to stop): ";
+    while (true) {
+        cin >> num;
+        if (num == 0) break;
+        total += num;
+        count++;
+        if (num > 0) pos++;
+        else neg++;
+    }
+    if (count > 0) {
+        cout << "The number of positives is " << pos << endl;
+        cout << "The number of negatives is " << neg << endl;
+        cout << "The total is " << total << endl;
+        cout << "The average is " << (double)total / count << endl;
+    }
+    return 0;
+}
